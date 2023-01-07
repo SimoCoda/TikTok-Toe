@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-6xl text-red-600 -mt-52 mb-10 sm:-mt-10">Inserite i vostri nomi!</h1>
+        <h1 class="text-6xl text-red-600 -mt-52 mb-10">Inserite i vostri nomi!</h1>
         <h3 class="text-red-500 text-xl italic underline underline-offset-4 mb-5">{{ errorMsg }}</h3>
         <div class="space-y-8 p-5">
             <div>

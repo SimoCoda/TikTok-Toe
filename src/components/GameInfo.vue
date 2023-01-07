@@ -1,12 +1,12 @@
 <template>
-    <h1 class="text-7xl text-red-600 mb-16 font-bold ">TikTok Toe</h1>
+    <h1 class="text-7xl text-red-600 mb-16 font-bold ">TicTac Toe</h1>
     <div class="h-1 mb-14 flex justify-between">
       <div>
         <div v-if="!editPlayerOne" class="flex">
           <h3 class="float-left text-3xl">
             {{ roundScore1 }}
           </h3>
-          <img class="float-left ml-3" src="../assets/image/edit.svg" @click="toggleNameOne" />
+          <img class="float-left ml-3 h-5 w-5 mt-2" src="../assets/image/edit.png" @click="toggleNameOne" />
         </div>
         <input placeholder="Modifica il nome" v-else type="text" v-model.trim="newNamePlayerOne" @keyup.enter="confirmEditNameOne" maxlength="10" class="rounded-lg border-2 border-stone-900 p-2 w-40">
       </div>
@@ -16,7 +16,7 @@
             <h3 class="float-right text-3xl">
             {{ roundScore2 }}
           </h3>
-          <img class="float-left ml-3" src="../assets/image/edit.svg" @click="toggleNameTwo" />
+          <img class="float-left ml-3 h-5 w-5 mt-2" src="../assets/image/edit.png" @click="toggleNameTwo" />
         </div>
         <input v-else placeholder="Modifica il nome"  type="text" v-model.trim="newNamePlayerTwo" @keyup.enter="confirmEditNameTwo" maxlength="10" class="rounded-lg border-2 border-stone-900 p-2 w-40">
       </div>
