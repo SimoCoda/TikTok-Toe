@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="w-[360px]">
     <div v-if="!isRoundOver"> 
       <GameInfo :nameOne="player1.name" :nameTwo="player2.name" :roundScore1="roundScore1" :roundScore2="roundScore2" :isTurn="isTurn" @editNameOne="editNameOne" @editNameTwo="editNameTwo"  />
 
       <div class="flex select-none bg-gray-200" v-for="(row, y) in table" :key="y">
         <div
-          class="h-40 w-40 border-2 border-zinc-900 text-9xl flex items-center justify-center hover:bg-green-200" :class="[table[y][x] !== '' ? 'cursor-not-allowed hover:bg-red-100' : 'cursor-pointer']" @click="selectCell(x, y)" v-for="(cell, x) in row" :key="x">
+          class="h-28 w-32 border-2 border-zinc-900 text-8xl flex items-center justify-center hover:bg-green-200" :class="[table[y][x] !== '' ? 'cursor-not-allowed hover:bg-red-100' : 'cursor-pointer']" @click="selectCell(x, y)" v-for="(cell, x) in row" :key="x">
           <h2>{{ cell }}</h2>
         </div>
       </div>
       <h3 class="mt-10 text-2xl">Pareggi: {{ isDrow }}</h3>
-      <GameStandings :playerOne="player1" :playerTwo="player2" />
+      <GameStandings :playerOne="player1" :playerTwo="player2" class="mb-10" />
     </div>
 
     <GameEnd v-else :isGameOver="isGameOver" :msg="msg" @resetBoard="resetBoard" @resetGameOver="resetGameOver" />

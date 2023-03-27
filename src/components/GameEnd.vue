@@ -1,11 +1,11 @@
 <template>
     <div>
         <div v-if="!isGameOver">
-          <h1 class="text-5xl font-bold">{{ msg }}</h1>
+          <h1 class="text-7xl mb-16">{{ msg }}</h1>
           <BaseButtons name="Rivincita" @action="resetBoard" />
         </div>
         <div v-else>
-          <h1 class="text-5xl font-bold">{{ msg }}</h1>
+          <h1 class="text-7xl mb-16">{{ msg }}</h1>
           <BaseButtons name="Ricomincia la sfida" @action="resetGameOver" />
         </div>
     </div>

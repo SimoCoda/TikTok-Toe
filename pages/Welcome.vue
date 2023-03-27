@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1 class="text-6xl text-red-600 -mt-52 mb-10">Inserite i vostri nomi!</h1>
-        <h3 class="text-red-500 text-xl italic underline underline-offset-4 mb-5">{{ errorMsg }}</h3>
+        <h1 class="text-4xl text-red-600 mt-5 mb-5 xl:-mt-64 xl:text-6xl">Inserite i vostri nomi!</h1>
+        <h3 class="text-red-500 text-xl italic underline underline-offset-4 mb-5 ">{{ errorMsg }}</h3>
         <div class="space-y-8 p-5">
             <div>
                 <label class="mr-5 text-lg font-bold" for="player1">Giocare uno:</label>
@@ -14,7 +14,7 @@
         </div>
     
         <BaseButtons name="Conferma" @action="confirmNames" />
-        <h3 class="mt-12 text-left ml-7 text-xl text-red-500">REGOLAMENTO:</h3>
+        <h3 class="mt-12 text-left ml-7 text-xl text-red-500 ">REGOLAMENTO:</h3>
         <p class="text-left ml-7 text-lg">Ogni vittoria vale <span class="font-bold text-xl">1</span> punto, vince chi arriva prima a <span class="font-bold text-xl">3</span> punti !!!</p>
         <h1 class="text-5xl font-bold text-red-600 mt-20">Buon divertimento!!!</h1>
     </div>
