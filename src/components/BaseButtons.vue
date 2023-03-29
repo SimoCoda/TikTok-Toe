@@ -1,5 +1,5 @@
 <template>
-    <button @click="action" class="border-2 border-stone-900 p-2 bg-white mt-5 ">{{name}}</button>
+    <button @click="action" class="text-black border-2 border-stone-900 p-2 bg-white mt-5 ">{{name}}</button>
 </template>
 
 <script>
